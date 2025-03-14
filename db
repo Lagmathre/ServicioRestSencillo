@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS Productos (
     Marca VARCHAR(50) NOT NULL              -- Marca del producto
 );
 
--- Insertar datos de ejemplo (opcional)
+-- Insertar datos de ejemplo 
 INSERT INTO Productos (Nombre, Descripcion, Precio, Cantidad, Categoria, Marca)
 VALUES 
     ('Laptop', 'Laptop de última generación', 1200.00, 10, 'Electrónica', 'Dell'),
