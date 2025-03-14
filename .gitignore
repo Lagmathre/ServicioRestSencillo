@@ -1,0 +1,6 @@
+# Ignorar archivos de NetBeans
+nb-configuration.xml
+nbactions.xml
+
+# Ignorar directorios de compilación
+target/
