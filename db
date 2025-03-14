@@ -1,0 +1,23 @@
+-- Crear la base de datos (si no existe)
+CREATE DATABASE IF NOT EXISTS productos;
+
+-- Usar la base de datos
+USE productos;
+
+-- Crear la tabla Productos
+CREATE TABLE IF NOT EXISTS Productos (
+    ID INT AUTO_INCREMENT PRIMARY KEY,      -- Identificador único del producto
+    Nombre VARCHAR(100) NOT NULL,           -- Nombre del producto
+    Descripcion TEXT,                       -- Descripción del producto
+    Precio DECIMAL(10, 2) NOT NULL,         -- Precio del producto
+    Cantidad INT NOT NULL,                  -- Cantidad en stock
+    Categoria VARCHAR(50) NOT NULL,         -- Categoría del producto
+    Marca VARCHAR(50) NOT NULL              -- Marca del producto
+);
+
+-- Insertar datos de ejemplo (opcional)
+INSERT INTO Productos (Nombre, Descripcion, Precio, Cantidad, Categoria, Marca)
+VALUES 
+    ('Laptop', 'Laptop de última generación', 1200.00, 10, 'Electrónica', 'Dell'),
+    ('Smartphone', 'Teléfono inteligente', 800.00, 15, 'Electrónica', 'Samsung'),
+    ('Tablet', 'Tablet de 10 pulgadas', 300.00, 20, 'Electrónica', 'Apple');
